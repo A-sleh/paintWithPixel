@@ -1,0 +1,118 @@
+* {
+    padding : 0 ;
+    margin:  0 ;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    overflow: hidden;
+}
+.bord {
+    width: calc( 70% - 14px);
+    height: 70%;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2;
+    
+}
+.bord li {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+}
+.control {
+    width: 100%;
+    flex: 1;
+    margin: 20px;
+}
+.control h1 {
+    font-size: 30px;
+    padding: 15px 20px;
+    background-color: #0097f4;
+    color: white;
+    font-weight: bold;
+    text-transform: capitalize;
+    width: fit-content;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+#color {
+    width: 100%;
+    height: 400px;
+    border: none;
+    cursor: pointer;
+}
+.btn {
+    display: flex;
+    justify-content: space-around;
+}
+h2 {
+    padding: 15px 20px;
+    background-color: #f49200;
+    width: fit-content;
+    color: white;
+    text-transform: capitalize;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px ;
+    text-align: center;
+    transition: .5s;
+}
+h2:last-child {
+    background-color: rgb(255, 174, 0);
+    position: relative;
+}
+span {
+    font-size: 18px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -20px;
+    background-color: red;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media ( max-width : 900px) {
+    .control h1 {
+        font-size: 25px ;
+    }
+    #color {
+        height: 200px;
+    }
+    h2 {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+    h2 span {
+        font-size: 13px;
+    }
+}
+@media ( max-width : 767px) {
+    .control h1 {
+        font-size: 15px ;
+    }
+    .bord {
+        margin-left: 0;
+    }
+    .control {
+        margin: 0;
+        margin-right: 10px;
+        margin-top: 10px;
+    }
+    #color {
+        height: 200px;
+    }
+    h2 {
+        padding: 10px 12px;
+        font-size: 15px;
+    }
+    h2 span {
+        font-size: 11px;
+    }
+}
