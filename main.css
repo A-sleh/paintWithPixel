@@ -81,9 +81,10 @@ span {
 @media ( max-width : 900px) {
     .control h1 {
         font-size: 25px ;
+        display: none;
     }
     #color {
-        height: 200px;
+        height: 100px;
     }
     h2 {
         padding: 10px 15px;
@@ -96,6 +97,7 @@ span {
 @media ( max-width : 767px) {
     .control h1 {
         font-size: 15px ;
+        display: none;
     }
     .bord {
         margin-left: 0;
@@ -106,7 +108,7 @@ span {
         margin-top: 10px;
     }
     #color {
-        height: 200px;
+        height: 100px;
     }
     h2 {
         padding: 10px 12px;
